@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet');
 
+*, html, body {
+    font-family: 'Noto Serif JP', serif;
+}
+
 html,
 body {
     height: 100%;
-}
-
-.greetings,
-p,
-h1, 
-h2 {
-    font-family: 'Noto Serif JP', serif;
 }
 
 .wrapper {
@@ -19,7 +16,7 @@ h2 {
     max-width: 1200px;
     background-color: #E6E6E6;
     padding: 5px;
-    height: 100%;
+    height: auto;
 }
 
 header {
@@ -54,7 +51,7 @@ li a {
     margin-left: 10px;
 }
 
-.about_me {
+.container {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;

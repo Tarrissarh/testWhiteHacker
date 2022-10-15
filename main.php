@@ -13,7 +13,7 @@
                 <h1><?php echo $articleTitle; ?></h1>
                 <div class="data">
                     <div class="myImg">
-                        <?php  echo '<img src="/images/php.jpg">'; ?>                    
+                        <?php echo '<img src="/images/php.jpg">'; ?>                    
                     </div>
 
                     <div class="fullname">
@@ -36,7 +36,22 @@
                             echo $c;
                         ?>
                         <br>                
-                        <?php echo $d; ?> 
+                        <?php echo $d . '<br>'; ?>
+                        <?php
+
+                        echo '<br>Примеры операций: <br>';
+                        
+                        foreach($operations as $key => $operation) {
+                            echo "$key = $operation<br>";
+                        }
+
+                        echo "<br>Типы данных: <br>";
+
+                        foreach($types as $type) {
+                            echo "$type => " . gettype($type)  . "<br>";
+                        }
+                        
+                        ?>
                 </div>
 
                 <div class="article">
